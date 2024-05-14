@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#container {
+  background-color: #2d2a2a; /* light gray background */
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  
+}
+
+form {
+ 
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* white background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* subtle shadow effect */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* light gray border */
+  border-radius: 5px;
+  box-sizing: border-box; /* ensures padding and border are included in the element's total width and height */
+}
+
+input[type="submit"] {
+  background-color: #007bff; /* blue button */
+  color: #fff; /* white text color */
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3; /* darker blue on hover */
+}
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 80%;
+  }
+}

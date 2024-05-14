@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+#container{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.609);
+  padding: 30px;
+}
+#btn{
+  background-color: rgba(55, 92, 240, 0.593);
+  padding: 5px 10px;
+  color: aliceblue;
+  border-radius: 10px;
+}

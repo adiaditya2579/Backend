@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class=" w-full min-h-screen  text-white bg-black ">
+    <div class="form p-4">
+      <form action="/create" method="post">
+        <input  class=" text-black block px-3 rounded-lg mt-4 w-full py-2  "
+        name="title"
+        type="text" 
+        placeholder="Enter Title"
+        />
+        <input  class=" text-black block px-3 rounded-lg mt-4 w-full py-2  "
+        name="detels"
+        type="text" 
+        placeholder="Enter Your Task" />
+        
+        
+        <input class="mt-4  " type="submit" value="Create Task"/>
+      </form>
+    </div>
+    <div class=" p-4 flex gap-3 task ">
+      <% if(files.length > 0) { %>
+        <% files.forEach(function(val){ %>
+          <div class=" w-72 px-3 py-4 bg-white">
+            <h1 class=" text-black text-3xl tracking-tighter"><%= val %></h1>
+            <a class=" text-black inline-block mt-3" href="">Read more</a>
+          </div>
+        <% }) %>
+    <% }else{ %>
+      <h3>No Task Yet</h3>
+            <% } %>
+      
+      
+      
+    </div>
+  </div>
+
+
+</body>
+</html>
